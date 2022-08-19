@@ -13,13 +13,11 @@ namespace BookCat.Models
         [Required]
         [Column("author")]
         [Display(Name = "Author")]
-        [StringLength(50)]
         public string? Author { get; set; }
 
         [Required]
         [Column("bookTitle")]
         [Display(Name = "Book Title")]
-        [StringLength(100)]
         public string? BookTitle { get; set; }
 
         [Column("description")]

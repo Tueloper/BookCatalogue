@@ -9,5 +9,9 @@ public class ApplicationDbContext : IdentityDbContext
         : base(options)
     {
     }
+
+    public DbSet<BookCat.Models.Category>? Categories { get; set; }
+
+    public DbSet<BookCat.Models.Book>? Books { get; set; }
 }
 
